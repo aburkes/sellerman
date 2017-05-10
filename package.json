@@ -1,0 +1,16 @@
+{
+  "name": "sellerman",
+  "version": "0.0.1",
+  "description": "Application to manage sales of complex or custom manufactured goods.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alan Burkes",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "express": "^4.15.2",
+    "sequelizer": "^1.1.3",
+    "sqlite3": "^3.1.8"
+  }
+}
