@@ -2,7 +2,7 @@ let Sequelize   = require("sequelize"),
     db          = require("../connection");
 
 module.exports = db.define("customItems", {
-    itemID: {
+/*    itemID: {
         type: Sequelize.INTEGER,
         primaryKey: true,
         autoIncrement: true
@@ -13,7 +13,7 @@ module.exports = db.define("customItems", {
             model: "contracts",
             key: "contractID"
         }
-    },
+    },*/
     customItemID: {
         type: Sequelize.INTEGER,
         references: {
@@ -29,5 +29,5 @@ module.exports = db.define("customItems", {
         type: Sequelize.FLOAT,
         allowNull: false
     },
-    comment: Sequelize.STRING
+    comment: Sequelize.STRING 
 });

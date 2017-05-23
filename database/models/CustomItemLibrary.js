@@ -23,7 +23,7 @@ module.exports = db.define("customItemLibaray", {
     */
     },
     priceMSRP: Sequelize.FLOAT, 
-    priceSale: Sequelize.Float, // 'price on sale'
+    priceSale: Sequelize.FLOAT, // 'price on sale'
     PriceMinimum: Sequelize.FLOAT, // minimum price allowed to offer
     priceCost: Sequelize.FLOAT // actual price of item.
 })

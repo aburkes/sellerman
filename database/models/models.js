@@ -5,11 +5,11 @@
 
 
 module.exports = {
-//	customers: require("./Customers"),
+	customers: require("./Customers"),
 	orders: require("./Orders"),
-//	customItemLibrary: require("./CustomItemLibrary"),
-//	customItemOptionLibrary: require("./CustomItemOptionLibrary"),
-//	customItems: require("./CustomItems"),
+	customItemLibrary: require("./CustomItemLibrary"),
+	customItemOptionLibrary: require("./CustomItemOptionLibrary"),
+	customItems: require("./CustomItems"),
 //	customItemOptions: require("./CustomItemOptions"),
 //	relationOrderItem: require("./RelationOrder-Item"),
 	users: require("./Users")

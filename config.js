@@ -1,3 +1,5 @@
+// This really needs to be seperated into it's own json file. I will... eventually.
+
 let config = {
     database: { // Settings regarding the database connection
         // The database to use
