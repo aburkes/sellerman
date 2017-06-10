@@ -2,6 +2,6 @@
 //    models      = require("./models/models");
 
 module.exports = {
-  connection: require("./connection"),
-  models: require("./models/models")
+  Connection: require("./connection"),
+  Models: require("./models/models")
 };
