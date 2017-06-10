@@ -1,9 +1,4 @@
-<!DOCTYPE HTML>
-<html>
-    <head>
-        <title>Create new Customer</title>
-    </head>
-    <body>
+<%= include('partials/header.ejs') %>
         <h1>Create a New Customer</h1>
         <form action="/get/customer" method="POST">
             <label for="nameFirst">First Name:</label>
@@ -23,5 +18,4 @@
             <label for="addressPostalCode">Post Code:</label>
             <input type="text">
         </form>
-    </body>
-</html>
+<%= include('partials/footer.ejs') %>
