@@ -1,12 +1,13 @@
-var express =       require('express'),
-    app =           express(),
-    bodyParser =    require('body-parser');
+let express = require('express'),
+    app = express(),
+    bodyParser = require('body-parser');
 
 // Settings
 
 app.set('views', 'interface/views');
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
+app.use(express.static('public'));
 
 //basic; used just to test.
 /*
@@ -24,6 +25,6 @@ app.listen(8000, "localhost", function(err){
     else {
         console.log("Express server running.");
     }
-})
+});
 
 module.exports = app;
