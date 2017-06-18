@@ -1,10 +1,5 @@
-// This just compiles all the models together.
-// If you ever need more models, add them to this export.
-
-//let Models = {customers: require("./Customers")};
-
-
-module.exports = {
+let db = require("../connection.js");
+let Models = {
 	Customers: require("./Customers"),
 	Orders: require("./Orders"),
 	CustomItemLibrary: require("./CustomItemLibrary"),
@@ -14,3 +9,5 @@ module.exports = {
 //	RelationOrderItem: require("./RelationOrder-Item"),
 	Users: require("./Users")
 };
+
+db.sync().then(function(){ module.exports = Models; });

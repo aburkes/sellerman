@@ -5,9 +5,9 @@ let config = {
         // The database to use
         name: "sellerman",
         // The Database user's username
-        user: "user",
+        //user: "example",
         // The database user's password
-        pass: "password",
+        pass: "example",
         // Database connection options. See the Sequelizer documentation for more information.
         options: {
             // Please note that many of these options are based on the default
@@ -15,7 +15,9 @@ let config = {
             // change them for a production environment.
             dialect: "sqlite",
             // the hostname of the database
-            host: "localhost"
+            //host: "localhost"
+            // SQLite only; comment out otherwise
+            storage: "./database/sellerman.sqlite3"
         }
     },
     // default sales tax rate
@@ -23,3 +25,7 @@ let config = {
 };
 
 module.exports = config;
+
+
+
+

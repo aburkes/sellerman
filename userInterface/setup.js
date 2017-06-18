@@ -4,7 +4,7 @@ let express = require('express'),
 
 // Settings
 
-app.set('views', 'interface/views');
+app.set('views', 'userInterface/views');
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static('public'));

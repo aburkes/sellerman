@@ -1,0 +1,21 @@
+<%= include('../partials/header.ejs') %>
+        <h1>Create a New Customer</h1>
+        <form action="/submit/customer" method="POST">
+            <label for="customer['nameFirst']">First Name:</label>
+            <input type="text" name="customer['nameFirst']">
+            <label for="customer['nameLast']">Last Name:</label>
+            <input type="text" name="customer['nameLast']">
+            <label for="customer['phonePrimary']">Phone Number:</label>
+            <input type="text" name="customer['phonePrimary']">
+            <label for="customer['phoneAlternate']">Alt Phone:</label>
+            <input type="text" name="customer['phoneAlternate']">
+            <label for="customer['AddressStreet']">Street Address:</label>
+            <input type="text" name="customer['AddressStreet']">
+            <label for="customer['addressCity']">City:</label>
+            <input type="text" name="customer['addressCity']">
+            <label for="customer['addressState']">State:</label>
+            <input type="text" name="customer['addressState']">
+            <label for="customer['addressPostalCode']">Post Code:</label>
+            <input type="text" name="customer['addressPostalCode']">
+        </form>
+<%= include('../partials/footer.ejs') %>
